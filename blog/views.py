@@ -4,6 +4,10 @@ from django.http import HttpResponse
 from . import models
 
 def index(request):
+    a = 'q'
+    s = 1
+    d = 1.9
+    f = True
     articles = models.Article.objects.all()
     return render(request, 'blog/index.html', {'articles': articles})
 
