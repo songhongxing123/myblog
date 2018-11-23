@@ -8,7 +8,7 @@ from django.conf.urls import url
 
 from . import views
 
-app_name = 'blog'
+app_name = 'order'
 urlpatterns = [
     #正则表达式^开始$结束，
     url(r'^index/$', views.index),

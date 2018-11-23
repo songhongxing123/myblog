@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章列表</title>
+</head>
+<body>
+<table border="1">
+    <th>
+        uuid
+    </th>
+    <th>
+        orderNo
+    </th>
+    <th>
+        nickName
+    </th>
+    <th>
+        ownerName
+    </th>
+
+    {% for order in orders %}
+        <tr>
+            <td>
+                {{ order.uuid }}
+            </td>
+            <td>
+                {{ order.orderNo }}
+            </td>
+            <td>
+                {{ order.nickName }}
+            </td>
+         <td>
+                {{ order.ownerName }}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
